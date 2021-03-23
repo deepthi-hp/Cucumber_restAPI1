@@ -38,8 +38,8 @@ Feature: Perform CRUD Operations
     Examples: 
       | Base_URI                          | Response_Code | Token                                    |
       | https://api.github.com/user/repos |           201 | e5e55370969bccb755d8ea71cbe16980dff0d11a |
-      
-      Scenario Outline: To Perform the PATCH Operation on GitHub
+
+  Scenario Outline: To Perform the PATCH Operation on GitHub
     Given The "<Base_URI>" for Post Operation and token is "<Token>"
     When User poerform the Post Operation
     Then Resonse should not be null
